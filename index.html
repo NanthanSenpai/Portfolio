@@ -1,127 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nanthan A | Portfolio</title>
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nanthan A | Cyberpunk Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white font-roboto leading-normal tracking-normal">
+<body>
 
-    <!-- Header Section -->
-    <header class="h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-teal-400 to-yellow-500">
-        <h1 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-600 animate-fadeInUp" data-aos="fade-up">Nanthan A</h1>
-        <p class="mt-4 text-2xl text-gray-100 animate-fadeInUp delay-200" data-aos="fade-up" data-aos-delay="200">Web Developer & Tech Enthusiast</p>
-    </header>
+  <!-- Slide Menu Toggle -->
+  <div class="mobile-menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-indigo-900 via-blue-900 to-indigo-700 bg-opacity-80 backdrop-blur-lg shadow-lg z-10 py-6">
-        <div class="container mx-auto flex justify-center space-x-8">
-            <a href="#profile" class="text-white text-xl hover:text-teal-400 transition duration-300">Profile</a>
-            <a href="#skills" class="text-white text-xl hover:text-teal-400 transition duration-300">Skills</a>
-            <a href="#projects" class="text-white text-xl hover:text-teal-400 transition duration-300">Projects</a>
-            <a href="#experience" class="text-white text-xl hover:text-teal-400 transition duration-300">Experience</a>
-            <a href="#education" class="text-white text-xl hover:text-teal-400 transition duration-300">Education</a>
-            <a href="#contact" class="text-white text-xl hover:text-teal-400 transition duration-300">Contact</a>
-        </div>
-    </nav>
+  <!-- Mobile Slide Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
-    <!-- Profile Section -->
-    <section id="profile" class="container mx-auto my-16 px-4 text-center">
-        <h2 class="text-5xl font-semibold text-teal-500 mb-6 animate-fadeInUp" data-aos="fade-up">About Me</h2>
-        <p class="text-gray-300 text-xl mb-6 animate-fadeInUp" data-aos="fade-up">I'm passionate about web development, creating beautiful, functional websites that serve as digital solutions.</p>
-        <p class="text-gray-200 text-xl animate-fadeInUp" data-aos="fade-up">GitHub: <a href="https://github.com/NanthanSenpai" target="_blank" class="text-teal-400 hover:underline">github.com/NanthanSenpai</a></p>
-    </section>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container mx-auto my-16 px-4">
-        <h2 class="text-5xl font-semibold text-teal-500 mb-8 text-center animate-fadeInUp" data-aos="fade-up">Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div class="bg-indigo-800 p-8 rounded-lg text-center shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 text-2xl font-semibold" data-aos="flip-left">Web Design</div>
-            <div class="bg-indigo-800 p-8 rounded-lg text-center shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 text-2xl font-semibold" data-aos="flip-left" data-aos-delay="100">Design Thinking</div>
-            <div class="bg-indigo-800 p-8 rounded-lg text-center shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 text-2xl font-semibold" data-aos="flip-left" data-aos-delay="200">Web & Multimedia</div>
-            <div class="bg-indigo-800 p-8 rounded-lg text-center shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 text-2xl font-semibold" data-aos="flip-left" data-aos-delay="300">Video Editing</div>
-            <div class="bg-indigo-800 p-8 rounded-lg text-center shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 text-2xl font-semibold" data-aos="flip-left" data-aos-delay="400">Front End Coding</div>
-            <div class="bg-indigo-800 p-8 rounded-lg text-center shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 text-2xl font-semibold" data-aos="flip-left" data-aos-delay="500">Project Management</div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="overlay"></div>
+    <h1 class="animated-text">Nanthan A</h1>
+    <p class="animated-subtext">Web Developer & Tech Enthusiast</p>
+  </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container mx-auto my-16 px-4">
-        <h2 class="text-5xl font-semibold text-teal-500 mb-8 text-center animate-fadeInUp" data-aos="fade-up">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-indigo-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600" data-aos="zoom-in">
-                <h3 class="text-3xl font-bold text-teal-400">Disnet</h3>
-                <p class="text-gray-400 mt-2">Role: Website Developer</p>
-                <p class="text-gray-400">Timeline: December 2023 - 2024</p>
-            </div>
-            <!-- Add more project items here -->
-        </div>
-    </section>
+  <!-- Profile -->
+  <section id="profile" class="content-section fade-in">
+    <h2>About Me</h2>
+    <p>I'm passionate about crafting futuristic and functional websites. Bringing design and logic together to build web-based experiences.</p>
+    <p>GitHub: <a href="https://github.com/NanthanSenpai" target="_blank">NanthanSenpai</a></p>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="container mx-auto my-16 px-4">
-        <h2 class="text-5xl font-semibold text-teal-500 mb-8 text-center animate-fadeInUp" data-aos="fade-up">Experience</h2>
-        <div class="bg-indigo-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600" data-aos="zoom-in">
-            <p class="text-gray-400 text-xl">Junior Web Developer at <strong class="text-teal-400">Tech Solutions Inc.</strong> (2023 - Present)</p>
-            <ul class="list-disc list-inside text-gray-400 text-lg mt-4">
-                <li>Developed and maintained responsive websites using HTML, CSS, JavaScript, and PHP.</li>
-                <li>Worked with backend systems and integrated third-party APIs for enhanced functionality.</li>
-                <li>Collaborated with a team to implement modern design trends and ensure best practices in code quality.</li>
-            </ul>
-        </div>
-        <div class="bg-indigo-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600 mt-8" data-aos="zoom-in">
-            <p class="text-gray-400 text-xl">Freelance Web Designer (2021 - 2023)</p>
-            <ul class="list-disc list-inside text-gray-400 text-lg mt-4">
-                <li>Created customized websites for small businesses, focusing on user experience and functionality.</li>
-                <li>Designed visually appealing UI/UX components using Figma and Adobe XD.</li>
-                <li>Managed client projects, providing continuous support and updates as needed.</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="content-section fade-in-up">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div>Web Design</div>
+      <div>Design Thinking</div>
+      <div>Web & Multimedia</div>
+      <div>Video Editing</div>
+      <div>Front End Coding</div>
+      <div>Project Management</div>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="container mx-auto my-16 px-4">
-        <h2 class="text-5xl font-semibold text-teal-500 mb-8 text-center animate-fadeInUp" data-aos="fade-up">Education</h2>
-        <div class="bg-indigo-800 p-8 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 transform hover:bg-indigo-600" data-aos="zoom-in">
-            <p class="text-gray-400 text-xl">BSc, Sri.S.Ramasamy Naidu Memorial College (65%) | 2021 - 2024</p>
-            <p class="text-gray-400 text-lg mt-4">Studied core subjects in Computer Science, Web Development, and Data Structures.</p>
-        </div>
-    </section>
+  <!-- Projects -->
+  <section id="projects" class="content-section fade-in-up">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div>
+        <h3>Disnet</h3>
+        <p>Role: Website Developer</p>
+        <p>Timeline: Dec 2023 - 2024</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container mx-auto my-16 px-4 text-center">
-        <h2 class="text-5xl font-semibold text-teal-500 mb-8 animate-fadeInUp" data-aos="fade-up">Contact</h2>
-        <p class="text-gray-400 text-xl mb-6 animate-fadeInUp" data-aos="fade-up">Feel free to reach out to me for collaborations or inquiries:</p>
-        <div class="flex justify-center space-x-6">
-            <a href="https://github.com/NanthanSenpai" class="text-teal-400 hover:text-teal-600">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nanthan-a-6b8243293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-teal-400 hover:text-teal-600">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-        </div>
-    </section>
+  <!-- Experience -->
+  <section id="experience" class="content-section fade-in-up">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Junior Web Developer @ Tech Solutions Inc. (2023 - Present)</h3>
+      <ul>
+        <li>Developed responsive sites with HTML, CSS, JS, PHP.</li>
+        <li>Integrated APIs for dynamic features.</li>
+        <li>Collaborated on modern UI/UX practices.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Freelance Web Designer (2021 - 2023)</h3>
+      <ul>
+        <li>Designed sites for startups with Figma & XD.</li>
+        <li>Handled full-stack implementation and updates.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="py-4 text-center bg-indigo-800 text-gray-400">
-        <p>&copy; 2024 Nanthan A | All Rights Reserved</p>
-    </footer>
+  <!-- Education -->
+  <section id="education" class="content-section fade-in-up">
+    <h2>Education</h2>
+    <div class="card">
+      <p>BSc, S.R.N.M. College (2021 - 2024)</p>
+      <p>Core: Computer Science, Web Dev, DS.</p>
+    </div>
+  </section>
 
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+  <!-- Contact -->
+  <section id="contact" class="content-section fade-in-up">
+    <h2>Contact</h2>
+    <p>For collabs or projects, hit me up!</p>
+    <div class="social-links">
+      <a href="https://github.com/NanthanSenpai" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/nanthan-a-6b8243293" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Nanthan A | Cyberpunk Mode Active</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('show');
+    }
+
+    window.addEventListener("scroll", () => {
+      document.querySelectorAll('.fade-in-up').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
